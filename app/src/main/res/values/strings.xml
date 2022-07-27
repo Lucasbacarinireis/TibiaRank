@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TibiaRank</string>
+    <string name="nome">Nome:</string>
+    <string name="level">Level:</string>
+    <string name="vocacao">Vocação:</string>
+    <string name="mundo">Mundo:</string>
+</resources>
