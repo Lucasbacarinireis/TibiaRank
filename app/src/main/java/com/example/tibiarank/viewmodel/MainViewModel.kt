@@ -16,19 +16,19 @@ class MainViewModel : ViewModel() {
 
     fun getAllRank() {
         RetrofitTibiaRank.createRetrofit()
-            .getAllRank()
+            .getAllRank("Antica", "distance", "paladins")
             .enqueue(object : Callback<RankResponse> {
                 override fun onResponse(
                     call: Call<RankResponse>,
                     response: Response<RankResponse>
                 ) {
                     if (response.isSuccessful) {
-                        data.postValue(response.body()?.highscores)
+                        data.postValue(response.body()?.highscores?.highscoreList)
                     }
                 }
 
                 override fun onFailure(call: Call<RankResponse>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    t.printStackTrace()
                 }
 
             })

@@ -41,7 +41,7 @@ data class Highscores(
 	val world: String? = null,
 
 	@field:SerializedName("highscore_list")
-	val highscoreList: List<HighscoreListItem?>? = null,
+	val highscoreList: List<HighscoreListItem>? = null,
 
 	@field:SerializedName("highscore_age")
 	val highscoreAge: Int? = null,
