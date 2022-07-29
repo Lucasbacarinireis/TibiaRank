@@ -16,7 +16,7 @@ class MainViewModel : ViewModel() {
 
     fun getAllRank() {
         RetrofitTibiaRank.createRetrofit()
-            .getAllRank("Antica", "distance", "paladins")
+            .getAllRank("all", "experience", "all")
             .enqueue(object : Callback<RankResponse> {
                 override fun onResponse(
                     call: Call<RankResponse>,

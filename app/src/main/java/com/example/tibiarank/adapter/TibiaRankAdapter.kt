@@ -28,7 +28,6 @@ class TibiaRankAdapter : RecyclerView.Adapter<TibiaRankViewHolder>() {
         val item = items[position]
 
         holder.bind(item)
-
     }
 
     override fun getItemCount(): Int {
@@ -44,6 +43,7 @@ class TibiaRankViewHolder(val binding: ItemCharacterBinding) :
         binding.tvLvl.text = item.level.toString()
         binding.tvVocation.text = item.vocation
         binding.tvWorld.text = item.world
+        binding.tvRank.text = "#${item.rank.toString().padStart(3,'0')}"
     }
 
 }
