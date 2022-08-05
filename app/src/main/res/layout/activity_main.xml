@@ -36,5 +36,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/frame_layout"
+        app:layout_constraintStart_toStartOf="@id/frame_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_layout"
+        app:layout_constraintEnd_toEndOf="@+id/frame_layout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

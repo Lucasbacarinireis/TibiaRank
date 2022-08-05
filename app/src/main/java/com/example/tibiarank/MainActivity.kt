@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tibiarank.adapter.TibiaRankAdapter
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
 //        recyclerView = binding.rvMain
 //        recyclerView.adapter = adapterRank
@@ -57,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         fragmentTransition.replace(R.id.frame_layout, fragment)
         fragmentTransition.commit()
 
-
-
     }
+
+
 }

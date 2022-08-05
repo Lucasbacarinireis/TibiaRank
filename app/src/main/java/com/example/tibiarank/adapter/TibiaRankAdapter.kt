@@ -1,6 +1,6 @@
 package com.example.tibiarank.adapter
 
-import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -43,7 +43,7 @@ class TibiaRankViewHolder(val binding: ItemCharacterBinding) :
         binding.tvLvl.text = item.level.toString()
         binding.tvVocation.text = item.vocation
         binding.tvWorld.text = item.world
-        binding.tvRank.text = "#${item.rank.toString().padStart(3,'0')}"
+        binding.tvRank.text = "#${item.rank.toString().padStart(3, '0')}"
     }
 
 }

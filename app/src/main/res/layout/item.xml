@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_rank_static2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Rank: "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_static2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_lvl_static2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/level"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_name_static2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_static2" />
+
+        <TextView
+            android:id="@+id/tv_vocation_static2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/vocacao"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_lvl_static2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lvl_static2" />
+
+        <TextView
+            android:id="@+id/tv_world_static2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/mundo"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_vocation_static2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vocation_static2" />
+
+        <TextView
+            android:id="@+id/tv_rank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="#001"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_rank_static2"
+            app:layout_constraintTop_toTopOf="@+id/tv_rank_static2" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="Lucas Reis"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_name_static2"
+            app:layout_constraintTop_toTopOf="@+id/tv_name_static2" />
+
+        <TextView
+            android:id="@+id/tv_lvl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="1001"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_lvl_static2"
+            app:layout_constraintTop_toTopOf="@+id/tv_lvl_static2" />
+
+        <TextView
+            android:id="@+id/tv_vocation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="Elite Knight"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_vocation_static2"
+            app:layout_constraintTop_toTopOf="@+id/tv_vocation_static2" />
+
+        <TextView
+            android:id="@+id/tv_world2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="Kalibra"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_world_static2"
+            app:layout_constraintTop_toTopOf="@+id/tv_world_static2" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

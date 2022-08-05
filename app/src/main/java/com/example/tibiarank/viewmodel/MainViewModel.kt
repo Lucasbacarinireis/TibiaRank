@@ -3,7 +3,6 @@ package com.example.tibiarank.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.tibiarank.model.HighscoreListItem
-import com.example.tibiarank.model.Highscores
 import com.example.tibiarank.model.RankResponse
 import com.example.tibiarank.service.RetrofitTibiaRank
 import retrofit2.Call
@@ -13,6 +12,7 @@ import retrofit2.Response
 class MainViewModel : ViewModel() {
 
     val data = MutableLiveData<List<HighscoreListItem>>()
+
 
     fun getAllRank() {
         RetrofitTibiaRank.createRetrofit()
@@ -33,4 +33,7 @@ class MainViewModel : ViewModel() {
 
             })
     }
+
+
+
 }
