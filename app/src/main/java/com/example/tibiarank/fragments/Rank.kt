@@ -10,15 +10,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tibiarank.R
 import com.example.tibiarank.adapter.TibiaRankAdapter
-import com.example.tibiarank.databinding.ActivityMainBinding
-import com.example.tibiarank.model.HighscoreListItem
+import com.example.tibiarank.databinding.FragmentRankBinding
 import com.example.tibiarank.viewmodel.MainViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-
 
 
 /**
@@ -31,19 +29,20 @@ class Rank : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentRankBinding
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapterRank: TibiaRankAdapter
     private val viewModdel = MainViewModel()
 
-    private lateinit var items: HighscoreListItem
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
@@ -76,7 +75,18 @@ class Rank : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+//        val progressBar = view.findViewById<ProgressBar>(R.id.progress_bar)
+//        progressBar.max = 1000
+//
+//        val currentProgress = 600
+//
+//        ObjectAnimator.ofInt(progressBar,"progress", currentProgress)
+//            .setDuration(2000)
+//            .start()
+
         val layoutManager = LinearLayoutManager(context)
+
         recyclerView = view.findViewById(R.id.rv_main)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
@@ -88,5 +98,4 @@ class Rank : Fragment() {
         }
         viewModdel.getAllRank()
     }
-
 }

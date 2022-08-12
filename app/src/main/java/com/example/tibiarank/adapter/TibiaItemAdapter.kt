@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tibiarank.databinding.ItemBinding
-import com.example.tibiarank.model.ItemsResponse
+import com.example.tibiarank.database.model.ItemsResponse
 
 class TibiaItemAdapter : RecyclerView.Adapter<TibiaItemViewHolder>() {
 

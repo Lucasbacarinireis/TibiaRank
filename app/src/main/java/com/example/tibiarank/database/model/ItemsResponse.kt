@@ -1,4 +1,4 @@
-package com.example.tibiarank.model
+package com.example.tibiarank.database.model
 
 import com.google.gson.annotations.SerializedName
 

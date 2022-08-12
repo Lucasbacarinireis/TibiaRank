@@ -1,6 +1,6 @@
 package com.example.tibiarank.service
 
-import com.example.tibiarank.model.RankResponse
+import com.example.tibiarank.database.model.RankResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

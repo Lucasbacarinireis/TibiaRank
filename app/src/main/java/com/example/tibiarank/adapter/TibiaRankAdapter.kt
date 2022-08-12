@@ -1,11 +1,10 @@
 package com.example.tibiarank.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tibiarank.databinding.ItemCharacterBinding
-import com.example.tibiarank.model.HighscoreListItem
+import com.example.tibiarank.database.model.HighscoreListItem
 
 class TibiaRankAdapter : RecyclerView.Adapter<TibiaRankViewHolder>() {
 

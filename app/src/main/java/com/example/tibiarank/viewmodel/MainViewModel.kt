@@ -2,8 +2,8 @@ package com.example.tibiarank.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.tibiarank.model.HighscoreListItem
-import com.example.tibiarank.model.RankResponse
+import com.example.tibiarank.database.model.HighscoreListItem
+import com.example.tibiarank.database.model.RankResponse
 import com.example.tibiarank.service.RetrofitTibiaRank
 import retrofit2.Call
 import retrofit2.Callback
